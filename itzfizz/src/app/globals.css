@@ -1,0 +1,287 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* 
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  background: #d1d1d1;
+  color: #111;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.section {
+  position: relative;
+  width: 100%;
+  height: 1245px;
+}
+
+
+.track {
+  position: relative;
+  width: 100%;
+  height: 416px;
+  overflow: visible;
+}
+
+.road {
+  position: absolute;
+
+  left: 0;
+  top: 50%;
+
+  width: 100%;
+  height: 200px;
+
+  transform: translateY(-50%);
+
+  overflow: hidden;
+
+  background: #1e1e1e;
+}
+
+
+.trail {
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  width: 0;
+  height: 100%;
+
+  background: #45db7d;
+
+  z-index: 1;
+
+  pointer-events: none;
+}
+
+
+.car {
+  position: absolute;
+
+  left: 0;
+  top: 50%;
+
+  width: 200px;
+  height: auto;
+
+  transform: translateY(-50%);
+
+  object-fit: contain;
+
+  z-index: 20;
+
+  pointer-events: none;
+
+  will-change: transform;
+}
+
+
+.value-add {
+  position: absolute;
+
+  left: 50%;
+  top: 30%;
+
+  transform: translateX(-50%);
+
+  z-index: 10;
+
+  display: flex;
+  align-items: center;
+
+  white-space: nowrap;
+
+  font-size: clamp(28px, 4vw, 64px);
+
+  font-weight: 700;
+
+  letter-spacing: 0.28em;
+
+  color: #f6b7d0;
+
+  pointer-events: none;
+}
+
+.value-letter {
+  display: inline-block;
+
+  opacity: 0;
+
+  transform: translateY(15px);
+
+  will-change: transform, opacity;
+}
+
+
+.text-box {
+  position: absolute;
+
+  z-index: 30;
+
+  width: 190px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+
+  font-size: 13px;
+  line-height: 1.35;
+
+  color: #111;
+
+  opacity: 0;
+
+  will-change: transform, opacity;
+}
+
+.num-box {
+  display: block;
+
+  font-size: 34px;
+  font-weight: 700;
+
+  line-height: 1;
+}
+
+
+.box1 {
+  top: 5%;
+  right: 30%;
+}
+
+.box2 {
+  bottom: 5%;
+  right: 35%;
+}
+
+.box3 {
+  top: 5%;
+  right: 10%;
+}
+
+.box4 {
+  bottom: 5%;
+  right: 12.5%;
+}
+
+
+@media (max-width: 768px) {
+  .section {
+    height: 1100px;
+  }
+
+  .track {
+    height: 360px;
+  }
+
+  .road {
+    height: 160px;
+  }
+
+  .car {
+    width: 150px;
+  }
+
+  .value-add {
+    font-size: 25px;
+    letter-spacing: 0.16em;
+  }
+
+  .text-box {
+    width: 140px;
+    font-size: 11px;
+  }
+
+  .num-box {
+    font-size: 26px;
+  }
+
+  .box1 {
+    right: 25%;
+  }
+
+  .box2 {
+    right: 25%;
+  }
+
+  .box3 {
+    right: 5%;
+  }
+
+  .box4 {
+    right: 5%;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .section {
+    height: 200vh;
+  }
+
+  .track {
+    height: 320px;
+  }
+
+  .road {
+    height: 140px;
+  }
+
+  .car {
+    width: 125px;
+  }
+
+  .value-add {
+    font-size: 19px;
+    letter-spacing: 0.1em;
+  }
+
+  .text-box {
+    width: 110px;
+    font-size: 9px;
+  }
+
+  .num-box {
+    font-size: 22px;
+  }
+} */
